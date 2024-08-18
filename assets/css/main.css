@@ -71,7 +71,7 @@ body {
         position: absolute;
         top: 60px;
         right: 0;
-        width: 250px; /* Increased width for more space */
+        width: 250px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         z-index: 999;
     }
@@ -94,8 +94,8 @@ body {
     }
 
     .dropdown {
-        margin-left: 0; /* Align the language dropdown with the logo */
-        margin-top: 10px; /* Added margin for better spacing */
+        margin-left: 0;
+        margin-top: 10px;
     }
 
     .dropdown-content {
@@ -242,7 +242,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Allow reviews to wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 .review-card {
@@ -250,7 +250,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     width: 100%;
-    max-width: 300px; /* Set a max-width for review cards */
+    max-width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
@@ -279,13 +279,13 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 0 5%;
-    flex-wrap: wrap; /* Allow footer columns to wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 #footer .footer-column {
-    width: 45%; /* Take up more width on smaller screens */
-    margin-bottom: 20px; /* Add space between footer columns */
-    text-align: center; /* Center text in mobile view */
+    width: 45%;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 #footer h4 {
@@ -384,12 +384,12 @@ body {
     }
 
     .review-card {
-        width: 100%; /* Make review cards full-width */
+        width: 100%;
     }
 
     #footer .footer-container {
         padding: 0 20px;
-        justify-content: space-between; /* Better spacing for footer items */
+        justify-content: space-between;
     }
 }
 
