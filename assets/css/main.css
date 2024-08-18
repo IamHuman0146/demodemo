@@ -20,13 +20,17 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Desktop Logo Styling */
+#header h1 {
+    margin-left: 20px;
+}
+
 #header h1 a {
     font-family: 'DM Sans', sans-serif;
     font-size: 28px;
     font-weight: 700;
     color: #00b67a;
     text-decoration: none;
-    margin-left: 20px;
 }
 
 #header h1 a:hover {
@@ -59,49 +63,6 @@ body {
 
 #nav a:hover {
     color: #00b67a;
-}
-
-/* Hide navigation in mobile view */
-@media (max-width: 768px) {
-    #nav {
-        display: none; /* Hide navigation by default */
-        flex-direction: column;
-        background: #222222;
-        padding: 20px;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 250px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        z-index: 999;
-    }
-    
-    #nav.active {
-        display: flex;
-    }
-
-    #nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .hamburger-menu {
-        display: block;
-        font-size: 24px;
-        color: white;
-        cursor: pointer;
-        margin-right: 20px;
-    }
-
-    .dropdown {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .dropdown-content {
-        right: 0;
-        left: auto;
-    }
 }
 
 /* Button Style for "Get Started" */
@@ -356,73 +317,79 @@ body {
     color: #ffffff;
 }
 
-/* Responsive Styles */
+/* Responsive Styles - Only Apply to Mobile */
 @media (max-width: 768px) {
     #header {
-        flex-direction: column;
         padding: 1em;
+        justify-content: space-between; /* Ensure proper alignment in mobile view */
+    }
+
+    /* Align elements in mobile */
+    .hamburger-menu {
+        display: block;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        margin-right: 0; /* Align to the left */
+    }
+
+    #header h1 {
+        order: 2;
+        flex-grow: 1;
+        text-align: center;
+        margin: 0; /* Center the logo */
+    }
+
+    .dropdown {
+        order: 3;
+        margin-left: auto;
+    }
+
+    #nav {
+        display: none;
+        flex-direction: column;
+        background: #222222;
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 250px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+    
+    #nav.active {
+        display: flex;
+    }
+
+    #nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
 
     .dropdown {
         margin-left: 0;
     }
 
-    .hamburger-menu {
-        display: block;
-        font-size: 24px;
-        color: white;
-        cursor: pointer;
-        margin-right: 20px;
-    }
-
-    .search-container {
-        width: 100%;
-    }
-
-    #banner h2 {
-        font-size: 28px;
-    }
-
-    .review-card {
-        width: 100%;
-    }
-
-    #footer .footer-container {
-        padding: 0 20px;
-        justify-content: space-between;
+    .dropdown-content {
+        right: 0;
+        left: auto;
     }
 }
 
-@media (max-width: 480px) {
-    #banner h2 {
-        font-size: 24px;
+/* Ensure Desktop Styles Remain Intact */
+@media (min-width: 769px) {
+    #header {
+        padding: 1em 20px;
     }
 
-    #banner p {
-        font-size: 16px;
+    #header h1 {
+        margin-left: 20px;
     }
 
-    .search-container button {
-        padding: 10px 20px;
-    }
-
-    .review-card {
-        width: 100%;
-    }
-
-    #footer .footer-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 0 20px;
-    }
-
-    #footer .footer-column {
-        width: 100%;
-        text-align: center;
-    }
-
-    #footer .footer-bottom ul {
-        flex-direction: column;
-        gap: 10px;
+    #nav {
+        display: flex;
+        position: static;
+        flex-direction: row;
     }
 }
