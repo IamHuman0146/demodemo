@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>VouchLink - Reviews You Can Trust</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <section id="header">
+
+            <!-- Logo -->
+            <h1><a href="index.html">VouchLink</a></h1>
+
+            <!-- Language Selector -->
+            <div class="dropdown">
+                <button class="dropbtn">Choose Language</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="changeLanguage('en')">English</a>
+                    <a href="#" onclick="changeLanguage('id')">Bahasa Indonesia</a>
+                </div>
+            </div>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a href="index.html" data-translate="home">Home</a></li>
+                    <li><a href="#" data-translate="features">Features</a></li>
+                    <li><a href="#" data-translate="pricing">Pricing</a></li>
+                    <li><a href="#" data-translate="contact">Contact</a></li>
+                    <li><a href="#" class="button" data-translate="getStarted">Get Started</a></li>
+                </ul>
+            </nav>
+
+        </section>
+        
+        <!-- Banner / Hero Section -->
+        <section id="banner">
+            <header>
+                <h2 data-translate="heroTitle">Customer Reviews You Can Trust</h2>
+                <p data-translate="heroSubtitle">Join thousands of businesses using our trusted platform.</p>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" placeholder="Company or category">
+                    <button data-translate="search">Search</button>
+                </div>
+            </header>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews">
+            <div class="container">
+                <h3 data-translate="reviewsTitle">What Our Users Say</h3>
+                <div class="review-list">
+                    <div class="review-card">
+                        <p data-translate="review1">“Amazing service, really helpful and quick!”</p>
+                        <span>- Jane Doe</span>
+                    </div>
+                    <div class="review-card">
+                        <p data-translate="review2">“The best platform I’ve ever used for reviews.”</p>
+                        <span>- John Smith</span>
+                    </div>
+                    <div class="review-card">
+                        <p data-translate="review3">“VouchLink helped me grow my business.”</p>
+                        <span>- Sarah Johnson</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section id="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h4 data-translate="about">About</h4>
+                    <ul>
+                        <li><a href="#" data-translate="aboutUs">About us</a></li>
+                        <li><a href="#" data-translate="jobs">Jobs</a></li>
+                        <li><a href="#" data-translate="contact">Contact</a></li>
+                        <li><a href="#" data-translate="blog">Blog</a></li>
+                        <li><a href="#" data-translate="howItWorks">How VouchLink works</a></li>
+                        <li><a href="#" data-translate="transparency">Transparency Report</a></li>
+                        <li><a href="#" data-translate="press">Press</a></li>
+                        <li><a href="#" data-translate="investorRelations">Investor Relations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-translate="community">Community</h4>
+                    <ul>
+                        <li><a href="#" data-translate="trustInReviews">Trust in reviews</a></li>
+                        <li><a href="#" data-translate="helpCenter">Help Center</a></li>
+                        <li><a href="#" data-translate="logIn">Log in</a></li>
+                        <li><a href="#" data-translate="signUp">Sign up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-translate="businesses">Businesses</h4>
+                    <ul>
+                        <li><a href="#" data-translate="business">VouchLink Business</a></li>
+                        <li><a href="#" data-translate="products">Products</a></li>
+                        <li><a href="#" data-translate="plansPricing">Plans & Pricing</a></li>
+                        <li><a href="#" data-translate="businessLogin">Business Login</a></li>
+                        <li><a href="#" data-translate="blogForBusiness">Blog for Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-translate="followUs">Follow us on</h4>
+                    <ul class="social-media-icons">
+                        <li><a href="#"><img src="assets/icons/facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="assets/icons/twitter.png" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="assets/icons/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="assets/icons/linkedin.png" alt="LinkedIn"></a></li>
+                        <li><a href="#"><img src="assets/icons/youtube.png" alt="YouTube"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-translate="chooseCountry">Choose country</h4>
+                    <select>
+                        <option>United States</option>
+                        <option>Canada</option>
+                        <option>United Kingdom</option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <ul>
+                    <li><a href="#" data-translate="legal">Legal</a></li>
+                    <li><a href="#" data-translate="privacyPolicy">Privacy Policy</a></li>
+                    <li><a href="#" data-translate="termsConditions">Terms & Conditions</a></li>
+                    <li><a href="#" data-translate="guidelines">Guidelines for Reviewers</a></li>
+                    <li><a href="#" data-translate="systemStatus">System status</a></li>
+                    <li><a href="#" data-translate="cookiePreferences">Cookie preferences</a></li>
+                    <li><a href="#" data-translate="modernSlavery">Modern Slavery Statement</a></li>
+                </ul>
+                <p>&copy; 2024 VouchLink. All rights reserved.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
