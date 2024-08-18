@@ -348,10 +348,35 @@ body {
     }
 }
 
+/* Mobile Responsive Styles */
 @media (max-width: 768px) {
     #header {
         flex-direction: column;
         padding: 1em;
+    }
+
+    #nav {
+        display: none; /* Hide nav links in mobile view */
+    }
+
+    .hamburger-menu {
+        display: block;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    /* Toggle Menu Visibility */
+    .hamburger-menu.active + #nav {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #222222;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
     #nav ul {
