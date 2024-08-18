@@ -71,7 +71,7 @@ body {
         position: absolute;
         top: 60px;
         right: 0;
-        width: 200px;
+        width: 250px; /* Increased width for more space */
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         z-index: 999;
     }
@@ -95,6 +95,7 @@ body {
 
     .dropdown {
         margin-left: 0; /* Align the language dropdown with the logo */
+        margin-top: 10px; /* Added margin for better spacing */
     }
 
     .dropdown-content {
@@ -181,7 +182,7 @@ body {
 }
 
 #banner h2 {
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 15px;
 }
 
@@ -239,16 +240,19 @@ body {
 
 .review-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
+    flex-wrap: wrap; /* Allow reviews to wrap on smaller screens */
 }
 
 .review-card {
     background-color: #f1f1f1;
     padding: 20px;
     border-radius: 8px;
-    width: 30%;
+    width: 100%;
+    max-width: 300px; /* Set a max-width for review cards */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .review-card p {
@@ -273,12 +277,15 @@ body {
 
 #footer .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 5%;
+    flex-wrap: wrap; /* Allow footer columns to wrap on smaller screens */
 }
 
 #footer .footer-column {
-    width: 18%;
+    width: 45%; /* Take up more width on smaller screens */
+    margin-bottom: 20px; /* Add space between footer columns */
+    text-align: center; /* Center text in mobile view */
 }
 
 #footer h4 {
@@ -377,11 +384,12 @@ body {
     }
 
     .review-card {
-        width: 90%;
+        width: 100%; /* Make review cards full-width */
     }
 
     #footer .footer-container {
         padding: 0 20px;
+        justify-content: space-between; /* Better spacing for footer items */
     }
 }
 
@@ -400,5 +408,21 @@ body {
 
     .review-card {
         width: 100%;
+    }
+
+    #footer .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    #footer .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    #footer .footer-bottom ul {
+        flex-direction: column;
+        gap: 10px;
     }
 }
