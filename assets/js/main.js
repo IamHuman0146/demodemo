@@ -91,3 +91,9 @@ function changeLanguage(lang) {
         element.textContent = translations[lang][key];
     });
 }
+<script>
+function toggleMenu() {
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+}
+</script>
